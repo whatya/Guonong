@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-w6-Y4E">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="180"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HomeItem" translatesAutoresizingMaskIntoConstraints="NO" id="GH7-tK-L0B" userLabel="ItemImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GH7-tK-L0B" secondAttribute="height" multiplier="1:1" id="D1F-Cp-oon"/>
+                                    <constraint firstAttribute="width" secondItem="GH7-tK-L0B" secondAttribute="height" multiplier="1:1" id="tZI-WY-pBQ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="D1F-Cp-oon"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ky-XJ-jQ1">
+                                <rect key="frame" x="0.0" y="120" width="120" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="纯天然礼宾水果" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flb-eA-zdb">
+                                        <rect key="frame" x="8" y="8" width="104" height="17"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25/kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9x-YL-bWn">
+                                        <rect key="frame" x="8" y="32" width="104" height="20"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.86666666670000003" green="0.42745098040000001" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Flb-eA-zdb" secondAttribute="trailing" constant="8" id="EzF-ay-HxN"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y9x-YL-bWn" secondAttribute="trailing" constant="8" id="RKo-S9-yh1"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y9x-YL-bWn" secondAttribute="bottom" constant="8" id="ZHX-e8-4n6"/>
+                                    <constraint firstItem="Flb-eA-zdb" firstAttribute="leading" secondItem="8Ky-XJ-jQ1" secondAttribute="leading" constant="8" id="aXs-N2-afc"/>
+                                    <constraint firstItem="Y9x-YL-bWn" firstAttribute="leading" secondItem="8Ky-XJ-jQ1" secondAttribute="leading" constant="8" id="t8M-jw-sAs"/>
+                                    <constraint firstItem="Flb-eA-zdb" firstAttribute="top" secondItem="8Ky-XJ-jQ1" secondAttribute="top" constant="8" id="uNb-kt-Zzu"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_card" translatesAutoresizingMaskIntoConstraints="NO" id="E63-az-B4x">
+                                <rect key="frame" x="65" y="8" width="55" height="26"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="etF-5V-Jfm"/>
+                                    <constraint firstAttribute="height" constant="26" id="xIV-5X-Oet"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="国产水果" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pA7-KJ-1w5">
+                                <rect key="frame" x="65" y="8" width="51" height="26"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8Ky-XJ-jQ1" firstAttribute="leading" secondItem="Zwg-w6-Y4E" secondAttribute="leading" id="4Fl-6z-nm9"/>
+                            <constraint firstAttribute="trailing" secondItem="E63-az-B4x" secondAttribute="trailing" id="67z-8v-AJe"/>
+                            <constraint firstItem="pA7-KJ-1w5" firstAttribute="top" secondItem="E63-az-B4x" secondAttribute="top" id="E6e-M6-Jm7"/>
+                            <constraint firstItem="E63-az-B4x" firstAttribute="top" secondItem="Zwg-w6-Y4E" secondAttribute="top" constant="8" id="Jpa-bU-xoY"/>
+                            <constraint firstAttribute="bottom" secondItem="8Ky-XJ-jQ1" secondAttribute="bottom" id="LJ4-fd-zqU"/>
+                            <constraint firstItem="GH7-tK-L0B" firstAttribute="top" secondItem="Zwg-w6-Y4E" secondAttribute="top" id="Rzd-Ua-6R7"/>
+                            <constraint firstItem="pA7-KJ-1w5" firstAttribute="bottom" secondItem="E63-az-B4x" secondAttribute="bottom" id="Z7f-MY-VXJ"/>
+                            <constraint firstAttribute="trailing" secondItem="GH7-tK-L0B" secondAttribute="trailing" id="ffR-2y-kPT"/>
+                            <constraint firstItem="GH7-tK-L0B" firstAttribute="leading" secondItem="Zwg-w6-Y4E" secondAttribute="leading" id="lcA-i2-DhO"/>
+                            <constraint firstAttribute="trailing" secondItem="8Ky-XJ-jQ1" secondAttribute="trailing" id="nwz-h8-xf0"/>
+                            <constraint firstItem="8Ky-XJ-jQ1" firstAttribute="top" secondItem="GH7-tK-L0B" secondAttribute="bottom" id="pme-S5-6XS"/>
+                            <constraint firstAttribute="bottom" secondItem="GH7-tK-L0B" secondAttribute="bottom" constant="60" id="tmB-eN-3sm"/>
+                            <constraint firstItem="pA7-KJ-1w5" firstAttribute="leading" secondItem="E63-az-B4x" secondAttribute="leading" id="uP3-GY-c3V"/>
+                            <constraint firstItem="pA7-KJ-1w5" firstAttribute="trailing" secondItem="E63-az-B4x" secondAttribute="trailing" constant="-4" id="uQN-Zy-ysF"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="tmB-eN-3sm"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="Zwg-w6-Y4E" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="F4A-fE-Lji"/>
+                <constraint firstAttribute="trailing" secondItem="Zwg-w6-Y4E" secondAttribute="trailing" id="QeW-C8-AQn"/>
+                <constraint firstAttribute="bottom" secondItem="Zwg-w6-Y4E" secondAttribute="bottom" id="cpm-77-ikr"/>
+                <constraint firstItem="Zwg-w6-Y4E" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m2q-tU-e0t"/>
+            </constraints>
+            <connections>
+                <outlet property="containerView" destination="Zwg-w6-Y4E" id="IjW-MA-bta"/>
+                <outlet property="imageView" destination="GH7-tK-L0B" id="RdJ-db-89o"/>
+                <outlet property="nameLB" destination="Flb-eA-zdb" id="pXE-Pg-qXH"/>
+                <outlet property="priceLB" destination="Y9x-YL-bWn" id="TcG-Pf-nAY"/>
+            </connections>
+            <point key="canvasLocation" x="178" y="176"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="HomeItem" width="400" height="302"/>
+        <image name="home_card" width="55" height="26"/>
+    </resources>
+</document>
