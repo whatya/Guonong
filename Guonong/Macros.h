@@ -14,6 +14,7 @@
 #import "NSUserDefaults+Util.h"
 #import "UIImageView+WebCache.h"
 #import "UIViewController+TopBar.h"
+#import "Types.h"
 
 
 //后台线程
@@ -30,7 +31,7 @@
 #define PasswordKey @"password"
 
 //颜色
-#define AppleColor      [UIColor colorWithRed:184/255.0 green:219/255.0 blue:103/255.0 alpha:1]
+#define AppleColor      [UIColor colorWithRed:161/255.0 green:211/255.0 blue:110/255.0 alpha:1]
 #define LightGrayColor  [UIColor lightGrayColor]
 #define WhiteColor      [UIColor whiteColor]
 

@@ -18,7 +18,7 @@
 @implementation CartCell
 
 - (void)awakeFromNib {
-    AddCorner(self.containerView, 0, 1, RGB(211, 211, 211, 1));
+    AddCorner(self.containerView, 0, 1, RGB(79, 79, 79, 1));
 }
 
 - (IBAction)changeCount:(UIButton *)sender

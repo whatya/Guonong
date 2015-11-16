@@ -11,7 +11,7 @@
 @implementation ItemCell
 
 - (void)awakeFromNib {
-    AddCorner(self.containerView, 0, 1, RGB(211, 211, 211, 1.0));
+    AddCorner(self.containerView, 0, 1, RGB(227, 227, 227, 1.0));
 }
 
 @end
