@@ -14,7 +14,7 @@
 #import "NSUserDefaults+Util.h"
 #import "UIImageView+WebCache.h"
 #import "UIViewController+TopBar.h"
-#import "Types.h"
+#import "TypeAndKey.h"
 
 
 //后台线程

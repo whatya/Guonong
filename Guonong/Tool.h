@@ -31,3 +31,15 @@ UIColor* RGB(int r,int g,int b,float alph);
 NSURL* URL(NSString *url);
 
 UIView *Nib(NSString* nibName,id target);
+
+NSString* StringValue(id source,NSString* key);
+
+NSArray* ArrayValue(id source,NSString *key);
+
+NSDictionary* DictionaryValue(id source,NSString *key);
+
+int IntNumber(id source,NSString *key);
+
+double DoubleNumber(id source,NSString *key);
+
+NSDate* DateValue(id source,NSString* key);
