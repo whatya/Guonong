@@ -103,7 +103,7 @@ typedef NS_ENUM(NSInteger, TransportWay) {
 #define Kimages         @"images"
 
 #define KbeCommented    @"beCommented"
-#define Kdesc           
+#define Kdesc           @"desc"
 
 
 #endif /* TypeAndKey_h */

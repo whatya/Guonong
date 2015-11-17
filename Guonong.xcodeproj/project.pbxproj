@@ -13,6 +13,15 @@
 		4085CBB81BFAF6690083AD78 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBB71BFAF6690083AD78 /* User.m */; };
 		4085CBBB1BFAF9B30083AD78 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBBA1BFAF9B30083AD78 /* Message.m */; };
 		4085CBBE1BFB0B660083AD78 /* OrderReco.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBBD1BFB0B660083AD78 /* OrderReco.m */; };
+		4085CBC11BFB1D340083AD78 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBC01BFB1D340083AD78 /* Comment.m */; };
+		4085CBC41BFB1F720083AD78 /* Feedback.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBC31BFB1F720083AD78 /* Feedback.m */; };
+		4085CBC71BFB20C40083AD78 /* Street.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBC61BFB20C40083AD78 /* Street.m */; };
+		4085CBCA1BFB22470083AD78 /* ItemDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBC91BFB22470083AD78 /* ItemDataService.m */; };
+		4085CBCD1BFB22590083AD78 /* OrderDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBCC1BFB22590083AD78 /* OrderDataService.m */; };
+		4085CBD01BFB22800083AD78 /* HttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBCF1BFB22800083AD78 /* HttpManager.m */; };
+		4085CBD31BFB229B0083AD78 /* UserHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBD21BFB229B0083AD78 /* UserHttpService.m */; };
+		4085CBD61BFB22AB0083AD78 /* ItemHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBD51BFB22AB0083AD78 /* ItemHttpService.m */; };
+		4085CBD91BFB22BF0083AD78 /* OrderHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4085CBD81BFB22BF0083AD78 /* OrderHttpService.m */; };
 		FE202EC21BEDCEF7009B8ECB /* ItemDescVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE202EC11BEDCEF7009B8ECB /* ItemDescVC.m */; };
 		FE202EC51BEDF27E009B8ECB /* PhoneTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE202EC41BEDF27E009B8ECB /* PhoneTVC.m */; };
 		FE202EC81BEDF877009B8ECB /* PasswordTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE202EC71BEDF877009B8ECB /* PasswordTVC.m */; };
@@ -101,6 +110,24 @@
 		4085CBBA1BFAF9B30083AD78 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		4085CBBC1BFB0B660083AD78 /* OrderReco.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderReco.h; sourceTree = "<group>"; };
 		4085CBBD1BFB0B660083AD78 /* OrderReco.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderReco.m; sourceTree = "<group>"; };
+		4085CBBF1BFB1D340083AD78 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		4085CBC01BFB1D340083AD78 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		4085CBC21BFB1F720083AD78 /* Feedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feedback.h; sourceTree = "<group>"; };
+		4085CBC31BFB1F720083AD78 /* Feedback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feedback.m; sourceTree = "<group>"; };
+		4085CBC51BFB20C40083AD78 /* Street.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Street.h; sourceTree = "<group>"; };
+		4085CBC61BFB20C40083AD78 /* Street.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Street.m; sourceTree = "<group>"; };
+		4085CBC81BFB22470083AD78 /* ItemDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDataService.h; sourceTree = "<group>"; };
+		4085CBC91BFB22470083AD78 /* ItemDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDataService.m; sourceTree = "<group>"; };
+		4085CBCB1BFB22590083AD78 /* OrderDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDataService.h; sourceTree = "<group>"; };
+		4085CBCC1BFB22590083AD78 /* OrderDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDataService.m; sourceTree = "<group>"; };
+		4085CBCE1BFB22800083AD78 /* HttpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpManager.h; sourceTree = "<group>"; };
+		4085CBCF1BFB22800083AD78 /* HttpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpManager.m; sourceTree = "<group>"; };
+		4085CBD11BFB229B0083AD78 /* UserHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserHttpService.h; sourceTree = "<group>"; };
+		4085CBD21BFB229B0083AD78 /* UserHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHttpService.m; sourceTree = "<group>"; };
+		4085CBD41BFB22AB0083AD78 /* ItemHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemHttpService.h; sourceTree = "<group>"; };
+		4085CBD51BFB22AB0083AD78 /* ItemHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemHttpService.m; sourceTree = "<group>"; };
+		4085CBD71BFB22BF0083AD78 /* OrderHttpService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderHttpService.h; sourceTree = "<group>"; };
+		4085CBD81BFB22BF0083AD78 /* OrderHttpService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderHttpService.m; sourceTree = "<group>"; };
 		FE202EC01BEDCEF7009B8ECB /* ItemDescVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemDescVC.h; sourceTree = "<group>"; };
 		FE202EC11BEDCEF7009B8ECB /* ItemDescVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemDescVC.m; sourceTree = "<group>"; };
 		FE202EC31BEDF27E009B8ECB /* PhoneTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneTVC.h; sourceTree = "<group>"; };
@@ -252,6 +279,12 @@
 				4085CBBA1BFAF9B30083AD78 /* Message.m */,
 				4085CBBC1BFB0B660083AD78 /* OrderReco.h */,
 				4085CBBD1BFB0B660083AD78 /* OrderReco.m */,
+				4085CBBF1BFB1D340083AD78 /* Comment.h */,
+				4085CBC01BFB1D340083AD78 /* Comment.m */,
+				4085CBC21BFB1F720083AD78 /* Feedback.h */,
+				4085CBC31BFB1F720083AD78 /* Feedback.m */,
+				4085CBC51BFB20C40083AD78 /* Street.h */,
+				4085CBC61BFB20C40083AD78 /* Street.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -277,12 +310,12 @@
 		FE4D98961BD7B3A800B20147 /* Guonong */ = {
 			isa = PBXGroup;
 			children = (
-				FEEBAD291BE49A6A0091F1A4 /* 第三方控件 */,
-				FEEBAD281BE494120091F1A4 /* NetworkService */,
-				FEEBAD271BE494040091F1A4 /* DataService */,
 				FEEBAD251BE4763F0091F1A4 /* GuonongGuide.rtf */,
+				FEEBAD291BE49A6A0091F1A4 /* 第三方控件 */,
 				FEC926E21BDB8F44006BF556 /* Code */,
 				408138711BF9EB11005CEDA1 /* Model */,
+				FEEBAD281BE494120091F1A4 /* NetworkService */,
+				FEEBAD271BE494040091F1A4 /* DataService */,
 				FEEBAD241BE475EB0091F1A4 /* 引导页面 */,
 				FEEBAD231BE475DD0091F1A4 /* 登陆注册 */,
 				FEEBAD3F1BE4DDAE0091F1A4 /* 果农主页 */,
@@ -479,6 +512,10 @@
 			children = (
 				FEEBAD321BE4A4820091F1A4 /* UserDataService.h */,
 				FEEBAD331BE4A4820091F1A4 /* UserDataService.m */,
+				4085CBC81BFB22470083AD78 /* ItemDataService.h */,
+				4085CBC91BFB22470083AD78 /* ItemDataService.m */,
+				4085CBCB1BFB22590083AD78 /* OrderDataService.h */,
+				4085CBCC1BFB22590083AD78 /* OrderDataService.m */,
 			);
 			name = DataService;
 			sourceTree = "<group>";
@@ -486,6 +523,14 @@
 		FEEBAD281BE494120091F1A4 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				4085CBCE1BFB22800083AD78 /* HttpManager.h */,
+				4085CBCF1BFB22800083AD78 /* HttpManager.m */,
+				4085CBD11BFB229B0083AD78 /* UserHttpService.h */,
+				4085CBD21BFB229B0083AD78 /* UserHttpService.m */,
+				4085CBD41BFB22AB0083AD78 /* ItemHttpService.h */,
+				4085CBD51BFB22AB0083AD78 /* ItemHttpService.m */,
+				4085CBD71BFB22BF0083AD78 /* OrderHttpService.h */,
+				4085CBD81BFB22BF0083AD78 /* OrderHttpService.m */,
 			);
 			name = NetworkService;
 			sourceTree = "<group>";
@@ -661,19 +706,24 @@
 			files = (
 				4085CBB81BFAF6690083AD78 /* User.m in Sources */,
 				FE4E74D11BE64C42002CB203 /* UIImage+GIF.m in Sources */,
+				4085CBCD1BFB22590083AD78 /* OrderDataService.m in Sources */,
 				FEDA6EB31BEA3E3400009A80 /* MeTVC.m in Sources */,
 				FE7603351BEDB4CE00C2808F /* ItemListVC.m in Sources */,
 				4085CBB51BFAF4FA0083AD78 /* FruitDesc.m in Sources */,
 				FEB4B32E1BF0D3EF00C9AD41 /* CartVC.m in Sources */,
 				FE4E74CE1BE64C42002CB203 /* SDWebImageManager.m in Sources */,
+				4085CBD31BFB229B0083AD78 /* UserHttpService.m in Sources */,
 				FE202EC51BEDF27E009B8ECB /* PhoneTVC.m in Sources */,
 				FEB4B3281BEF399E00C9AD41 /* OrderCell.m in Sources */,
 				FE4E74D51BE64C42002CB203 /* UIImageView+WebCache.m in Sources */,
+				4085CBD61BFB22AB0083AD78 /* ItemHttpService.m in Sources */,
 				FE4E74CD1BE64C42002CB203 /* SDWebImageDownloaderOperation.m in Sources */,
 				4085CBB21BFAF1050083AD78 /* FruitReco.m in Sources */,
 				FEEBAD311BE49AE40091F1A4 /* ProgressHUD.m in Sources */,
 				4085CBBB1BFAF9B30083AD78 /* Message.m in Sources */,
+				4085CBCA1BFB22470083AD78 /* ItemDataService.m in Sources */,
 				FE4E74C91BE64C42002CB203 /* SDImageCache.m in Sources */,
+				4085CBC71BFB20C40083AD78 /* Street.m in Sources */,
 				4085CBBE1BFB0B660083AD78 /* OrderReco.m in Sources */,
 				FE4E74C71BE64C42002CB203 /* MKAnnotationView+WebCache.m in Sources */,
 				FEC926E11BDB8CE3006BF556 /* NSObject+Util.m in Sources */,
@@ -682,6 +732,7 @@
 				FE745C051BE8EEE900AFA15E /* ItemCell.m in Sources */,
 				FE4E74D61BE64C42002CB203 /* UIView+WebCacheOperation.m in Sources */,
 				FE4D98CC1BD7B64D00B20147 /* TabVC.m in Sources */,
+				4085CBC11BFB1D340083AD78 /* Comment.m in Sources */,
 				FEB4B32B1BEF7BB100C9AD41 /* OrderDescTVC.m in Sources */,
 				FEDA6EAF1BEA309C00009A80 /* ClassificationTVC.m in Sources */,
 				FE4E74D31BE64C42002CB203 /* UIImage+WebP.m in Sources */,
@@ -689,7 +740,9 @@
 				FE4D989C1BD7B3A800B20147 /* AppDelegate.m in Sources */,
 				FE4D98991BD7B3A800B20147 /* main.m in Sources */,
 				FEB4B31E1BEEFAE900C9AD41 /* AboutTVC.m in Sources */,
+				4085CBD91BFB22BF0083AD78 /* OrderHttpService.m in Sources */,
 				FEEBAD3E1BE4DBAF0091F1A4 /* UIViewController+TopBar.m in Sources */,
+				4085CBD01BFB22800083AD78 /* HttpManager.m in Sources */,
 				FE4E74CA1BE64C42002CB203 /* SDWebImageCompat.m in Sources */,
 				FE202EC21BEDCEF7009B8ECB /* ItemDescVC.m in Sources */,
 				FE202ECB1BEE0091009B8ECB /* SetTVC.m in Sources */,
@@ -700,6 +753,7 @@
 				FE4E74CB1BE64C42002CB203 /* SDWebImageDecoder.m in Sources */,
 				FE4E74961BE617F8002CB203 /* CarouselView.m in Sources */,
 				FE4E74D41BE64C42002CB203 /* UIImageView+HighlightedWebCache.m in Sources */,
+				4085CBC41BFB1F720083AD78 /* Feedback.m in Sources */,
 				FE4E74D01BE64C42002CB203 /* UIButton+WebCache.m in Sources */,
 				FEB4B3251BEF355700C9AD41 /* OrderListVC.m in Sources */,
 				FE202EC81BEDF877009B8ECB /* PasswordTVC.m in Sources */,
