@@ -280,5 +280,38 @@ NSDate* DateValue(id source,NSString* key)
         NSLog(@"源数据不是NSDictionary");
         return 0;
     }
+}
 
+#pragma mark- 拼接请求url
+NSString* requestUrlString(NSString* serverAddress,int port,NSString *apiString)
+{
+    return [NSString stringWithFormat:@"%@:%d/%@",serverAddress,port,apiString];
+}
+
+#pragma mark- 请求参数
+NSString* KVs(NSArray* keys,NSArray* values)
+{
+    NSString * queryString = @"";
+    for (int i = 0;i<keys.count;i++){
+        NSString *key = keys[i];
+        NSString *value = values[i];
+        NSString *kvTemp = [NSString stringWithFormat:@"%@=%@&",key,value];
+        queryString = [queryString stringByAppendingString:kvTemp];
+    }
+    if (queryString.length > 2) {
+        return [queryString substringToIndex:queryString.length - 1];
+    }else{
+        return nil;
+    }
+}
+
+#pragma mark- 整数转对应字符串
+NSString* IntString(int intNumber)
+{
+    return [NSString stringWithFormat:@"%d",intNumber];
+}
+
+NSString* AddSingleQuote(NSString *string)
+{
+    return [NSString stringWithFormat:@"'%@'",string];
 }

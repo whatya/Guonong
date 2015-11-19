@@ -43,3 +43,11 @@ int IntNumber(id source,NSString *key);
 double DoubleNumber(id source,NSString *key);
 
 NSDate* DateValue(id source,NSString* key);
+
+NSString* requestUrlString(NSString* serverAddress,int port,NSString *apiString);
+
+NSString* KVs(NSArray* keys,NSArray* values);
+
+NSString* IntString(int intNumber);
+
+NSString* AddSingleQuote(NSString *string);

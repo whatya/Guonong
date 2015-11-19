@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Macros.h"
+
+typedef void(^JsonCallback)(BOOL success,NSDictionary *json,NSError *error);
 
 @interface HttpManager : NSObject
+
++ (HttpManager*)sharedManager;
+
+- (void)requestUrl:(NSString*)urlString withParameterString:(NSString*)parameter andCallback:(JsonCallback)callback;
 
 @end

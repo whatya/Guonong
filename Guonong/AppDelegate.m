@@ -11,6 +11,8 @@
 #import "GuideVC.h"
 #import "LoginVC.h"
 
+#import "AppDelegate+API.h"
+
 @interface AppDelegate ()
 
 @end
@@ -46,6 +48,8 @@
         self.window.rootViewController = guideVC;
         [self.window makeKeyAndVisible];
     }
+    
+    [self test];
     
     return YES;
 }

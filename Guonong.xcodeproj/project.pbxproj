@@ -26,6 +26,7 @@
 		FE202EC51BEDF27E009B8ECB /* PhoneTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE202EC41BEDF27E009B8ECB /* PhoneTVC.m */; };
 		FE202EC81BEDF877009B8ECB /* PasswordTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE202EC71BEDF877009B8ECB /* PasswordTVC.m */; };
 		FE202ECB1BEE0091009B8ECB /* SetTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FE202ECA1BEE0091009B8ECB /* SetTVC.m */; };
+		FE4CD5DC1BFE135C00853AB2 /* AppDelegate+API.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4CD5DB1BFE135C00853AB2 /* AppDelegate+API.m */; settings = {ASSET_TAGS = (); }; };
 		FE4D98991BD7B3A800B20147 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4D98981BD7B3A800B20147 /* main.m */; };
 		FE4D989C1BD7B3A800B20147 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4D989B1BD7B3A800B20147 /* AppDelegate.m */; };
 		FE4D98A21BD7B3A800B20147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE4D98A01BD7B3A800B20147 /* Main.storyboard */; };
@@ -136,6 +137,9 @@
 		FE202EC71BEDF877009B8ECB /* PasswordTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordTVC.m; sourceTree = "<group>"; };
 		FE202EC91BEE0091009B8ECB /* SetTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetTVC.h; sourceTree = "<group>"; };
 		FE202ECA1BEE0091009B8ECB /* SetTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetTVC.m; sourceTree = "<group>"; };
+		FE4CD5D61BFE072500853AB2 /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		FE4CD5DA1BFE135C00853AB2 /* AppDelegate+API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+API.h"; sourceTree = "<group>"; };
+		FE4CD5DB1BFE135C00853AB2 /* AppDelegate+API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+API.m"; sourceTree = "<group>"; };
 		FE4D98941BD7B3A800B20147 /* Guonong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Guonong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE4D98981BD7B3A800B20147 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE4D989A1BD7B3A800B20147 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -325,6 +329,8 @@
 				FEB4B3221BEF353000C9AD41 /* 订单部分 */,
 				FE4D989A1BD7B3A800B20147 /* AppDelegate.h */,
 				FE4D989B1BD7B3A800B20147 /* AppDelegate.m */,
+				FE4CD5DA1BFE135C00853AB2 /* AppDelegate+API.h */,
+				FE4CD5DB1BFE135C00853AB2 /* AppDelegate+API.m */,
 				FE4D98CA1BD7B64D00B20147 /* TabVC.h */,
 				FE4D98CB1BD7B64D00B20147 /* TabVC.m */,
 				FE4D98A01BD7B3A800B20147 /* Main.storyboard */,
@@ -447,6 +453,7 @@
 		FEC926E21BDB8F44006BF556 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				FE4CD5D61BFE072500853AB2 /* API.h */,
 				FE4D98CE1BD7BCD000B20147 /* Macros.h */,
 				FEFCC8C11BDFBCBB00C64996 /* Tool.h */,
 				FEFCC8C21BDFBCBB00C64996 /* Tool.m */,
@@ -723,6 +730,7 @@
 				4085CBBB1BFAF9B30083AD78 /* Message.m in Sources */,
 				4085CBCA1BFB22470083AD78 /* ItemDataService.m in Sources */,
 				FE4E74C91BE64C42002CB203 /* SDImageCache.m in Sources */,
+				FE4CD5DC1BFE135C00853AB2 /* AppDelegate+API.m in Sources */,
 				4085CBC71BFB20C40083AD78 /* Street.m in Sources */,
 				4085CBBE1BFB0B660083AD78 /* OrderReco.m in Sources */,
 				FE4E74C71BE64C42002CB203 /* MKAnnotationView+WebCache.m in Sources */,

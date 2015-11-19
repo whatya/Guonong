@@ -15,7 +15,10 @@
 #import "UIImageView+WebCache.h"
 #import "UIViewController+TopBar.h"
 #import "TypeAndKey.h"
+#import "API.h"
 
+//GBK编码
+#define GBKEncoding CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000)
 
 //后台线程
 #define BKQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
