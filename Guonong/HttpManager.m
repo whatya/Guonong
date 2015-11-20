@@ -47,9 +47,9 @@
     request.HTTPMethod = @"POST";
     NSData *data = [parameter dataUsingEncoding:NSUTF8StringEncoding];
     
-    [self.session uploadTaskWithRequest:request fromData:data completionHandler:^(NSData * data, NSURLResponse * response, NSError *error) {
+    [[self.session uploadTaskWithRequest:request fromData:data completionHandler:^(NSData * data, NSURLResponse * response, NSError *error) {
         
-        if (error) { callback(NO,nil,error); return;}
+        if (error) { callback(error,nil); return;}
         
         NSError     *jsonError = nil;
         NSString    *GBKString = [[NSString alloc] initWithData:data encoding:GBKEncoding];
@@ -59,11 +59,11 @@
                                                                           options:kNilOptions
                                                                             error:&jsonError];
         
-        if (jsonError) { callback(NO,nil,jsonError); return;}
+        if (jsonError) { callback(jsonError,nil); return;}
         
-        callback(YES,jsonValue,nil);
+        callback(nil,jsonValue);
         
-    }];
+    }] resume];
 }
 
 @end

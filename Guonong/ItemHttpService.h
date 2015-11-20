@@ -11,13 +11,20 @@
 #import "HttpManager.h"
 
 //获取首页轮播图
-#define FetchPromotion @"GuoNongServer/Fruit/findRecos"
+#define FindRecos @"GuoNongServer/Fruit/findRecos"
+
+//获取所有水果列表
+#define FindAll   @"GuoNongServer/Fruit/findAll"
+
+//根据id获取水果详情
+#define FindById  @"GuoNongServer/Fruit/findById"
 
 @interface ItemHttpService : NSObject
 
-- (void)promotionFruitsFrom:(int)start
-                    toIndex:(int)max
-                     inCity:(NSString*)cityName
-                     result:(void(^)(BOOL success,NSString *errorString,NSDictionary *data))jsonCallback;
+- (void)promotionFruitsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(NSString *errorString,NSArray *fruits))callback;
+
+- (void)allFruitsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(NSString *errorString,NSArray *fruits))callback;
+
+- (void)fruitDetailWithId:(NSString*)fruitId result:(void(^)(NSString *errorString,NSDictionary *fruit))callback;
 
 @end

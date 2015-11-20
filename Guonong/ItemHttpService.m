@@ -10,24 +10,60 @@
 
 @implementation ItemHttpService
 
-- (void)promotionFruitsFrom:(int)start
-                    toIndex:(int)max
-                     inCity:(NSString *)cityName
-                     result:(void (^)(BOOL, NSString *, NSDictionary *))jsonCallback
-{
-    NSString *urlString = requestUrlString(ServerAddress, 8080, FetchPromotion);
+#pragma mark- 获取首页轮播水果
+- (void)promotionFruitsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(NSString *errorString,NSArray *fruits))callback;
+{ShowLog
     
-    NSString *valueString = KVs(@[@"start",@"max",@"city"], @[IntString(start),IntString(max),AddSingleQuote(cityName)]);
+    NSString *urlString = RequestUrlString(ServerAddress, 8080, FindRecos);
     
-    [[HttpManager sharedManager] requestUrl:urlString withParameterString:valueString andCallback:^(BOOL success, NSDictionary *json, NSError *error) {
-        if (!success) {
-            jsonCallback(NO,[error localizedDescription],nil);
-            return ;
-        }
+    NSString *params      = JsonParamString(@"data", @{@"start":@(start),@"max":@(max),@"city":cityName});
+    
+    [[HttpManager sharedManager] requestUrl:urlString withParameterString:params andCallback:^(NSError *error,NSArray *json) {
         
-        jsonCallback(YES,nil,json);
+        if (error) { callback(@"没有数据!",nil); return; };
+        
+        callback(nil,json);
+        
         
     }];
+}
+
+#pragma mark- 获取所有水果（分页）
+- (void)allFruitsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(NSString *errorString,NSArray *fruits))callback;
+{ShowLog
+    
+    NSString *urlString = RequestUrlString(ServerAddress, 8080, FindAll);
+    
+    NSString *params      = JsonParamString(@"data", @{@"start":@(start),@"max":@(max),@"city":cityName});
+    
+    [[HttpManager sharedManager] requestUrl:urlString withParameterString:params andCallback:^(NSError *error,NSArray *json) {
+        
+        if (error) { callback(@"没有数据!",nil); return; };
+        
+        callback(nil,json);
+        
+        
+    }];
+}
+
+#pragma mark- 获取水果详情
+- (void)fruitDetailWithId:(NSString *)fruitId result:(void (^)(NSString *, NSDictionary *))callback
+{ShowLog
+    
+    NSString *urlString = RequestUrlString(ServerAddress, 8080, FindById);
+    
+    NSString *params      = JsonParamString(@"data", @{@"id":fruitId});
+    
+    [[HttpManager sharedManager] requestUrl:urlString withParameterString:params andCallback:^(NSError *error,NSDictionary *json) {
+        
+        if (error) { callback(@"没有数据!",nil); return; };
+        
+        callback(nil,json);
+        
+        
+    }];
+
+    
 }
 
 @end

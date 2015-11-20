@@ -283,35 +283,21 @@ NSDate* DateValue(id source,NSString* key)
 }
 
 #pragma mark- 拼接请求url
-NSString* requestUrlString(NSString* serverAddress,int port,NSString *apiString)
+NSString* RequestUrlString(NSString* serverAddress,int port,NSString *apiString)
 {
     return [NSString stringWithFormat:@"%@:%d/%@",serverAddress,port,apiString];
 }
 
-#pragma mark- 请求参数
-NSString* KVs(NSArray* keys,NSArray* values)
+#pragma mark- 拼接请求参数
+NSString* JsonParamString(NSString* key,NSDictionary* valueDic)
 {
-    NSString * queryString = @"";
-    for (int i = 0;i<keys.count;i++){
-        NSString *key = keys[i];
-        NSString *value = values[i];
-        NSString *kvTemp = [NSString stringWithFormat:@"%@=%@&",key,value];
-        queryString = [queryString stringByAppendingString:kvTemp];
-    }
-    if (queryString.length > 2) {
-        return [queryString substringToIndex:queryString.length - 1];
-    }else{
-        return nil;
-    }
-}
-
-#pragma mark- 整数转对应字符串
-NSString* IntString(int intNumber)
-{
-    return [NSString stringWithFormat:@"%d",intNumber];
-}
-
-NSString* AddSingleQuote(NSString *string)
-{
-    return [NSString stringWithFormat:@"'%@'",string];
+    NSError *parseError = nil;
+    
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:valueDic options:NSJSONWritingPrettyPrinted error:&parseError];
+    
+    if (parseError) { return nil; }
+    
+    NSString* jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    return [NSString stringWithFormat:@"%@=%@",key,jsonString];
 }

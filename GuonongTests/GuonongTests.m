@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "HttpManager.h"
 
 @interface GuonongTests : XCTestCase
 
@@ -24,16 +25,21 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+- (void)testHttpManagerRequest {
+    XCTestExpectation *completionExpectation = [self expectationWithDescription:@"HttpManager Request"];
+    
+    [[HttpManager sharedManager] requestUrl:@"http://123.56.103.186:8080/GuoNongServer/Fruit/findRecos"
+                        withParameterString:@"data={'start':0,'max':3,'city':'雅安市'}"
+                                andCallback:^(NSError *error,NSArray* fruits) {
+                                    
+                                    XCTAssertEqual([fruits isKindOfClass:[NSArray class]], error == nil);
+                                    
+                                    [completionExpectation fulfill];
+                                    
+                                    }];
+    
+    [self waitForExpectationsWithTimeout:5.0 handler:nil];
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
 
 @end
