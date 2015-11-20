@@ -17,6 +17,7 @@
 #import "TypeAndKey.h"
 #import "API.h"
 
+
 //回调函数定义
 typedef void(^JsonCallback)(NSError *error,id json);
 
