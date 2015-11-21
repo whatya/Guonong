@@ -30,9 +30,9 @@
 {
     XCTestExpectation *completionExpectation = [self expectationWithDescription:@"AllStreetsFetch"];
     
-    [self.orderHttpService allStreetsFrom:0 toIndex:10 inCity:@"雅安市" result:^(NSString *errorString, NSArray *streets) {
+    [self.orderHttpService allStreetsFrom:0 toIndex:10 inCity:@"雅安市" result:^(ResponseCode status, NSArray *streets) {
         
-        XCTAssertNil(errorString);
+        XCTAssertEqual(status, SUCCESS);
         
         XCTAssertTrue([streets isKindOfClass:[NSArray class]]);
         

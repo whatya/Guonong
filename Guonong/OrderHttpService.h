@@ -15,7 +15,7 @@
 
 @interface OrderHttpService : NSObject
 
-- (void)allStreetsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(NSString *errorString,NSArray *streets))callback;
+- (void)allStreetsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(ResponseCode status,NSArray *streets))callback;
 
 
 @end

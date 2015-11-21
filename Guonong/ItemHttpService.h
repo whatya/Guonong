@@ -21,10 +21,10 @@
 
 @interface ItemHttpService : NSObject
 
-- (void)promotionFruitsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(NSString *errorString,NSArray *fruits))callback;
+- (void)promotionFruitsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(ResponseCode status,NSArray *fruits))callback;
 
-- (void)allFruitsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(NSString *errorString,NSArray *fruits))callback;
+- (void)allFruitsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(ResponseCode status,NSArray *fruits))callback;
 
-- (void)fruitDetailWithId:(NSString*)fruitId result:(void(^)(NSString *errorString,NSDictionary *fruit))callback;
+- (void)fruitDetailWithId:(NSString*)fruitId result:(void(^)(ResponseCode status,NSDictionary *fruit))callback;
 
 @end

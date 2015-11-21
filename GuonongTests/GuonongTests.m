@@ -30,9 +30,9 @@
     
     [[HttpManager sharedManager] requestUrl:@"http://123.56.103.186:8080/GuoNongServer/Fruit/findRecos"
                         withParameterString:@"data={'start':0,'max':3,'city':'雅安市'}"
-                                andCallback:^(NSError *error,NSArray* fruits) {
+                                andCallback:^(ResponseCode status,NSArray* fruits) {
                                     
-                                    XCTAssertEqual([fruits isKindOfClass:[NSArray class]], error == nil);
+                                    XCTAssertEqual([fruits isKindOfClass:[NSArray class]], status == SUCCESS);
                                     
                                     [completionExpectation fulfill];
                                     

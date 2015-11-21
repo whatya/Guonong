@@ -11,19 +11,16 @@
 @implementation OrderHttpService
 
 #pragma mark- 获取所有街区
-- (void)allStreetsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(NSString *errorString,NSArray *streets))callback
+- (void)allStreetsFrom:(int)start toIndex:(int)max inCity:(NSString*)cityName result:(void(^)(ResponseCode status,NSArray *streets))callback
 {ShowLog
     
     NSString *urlString = RequestUrlString(ServerAddress, 8080, FindAllStreet);
     
     NSString *params      = JsonParamString(@"data", @{@"start":@(start),@"max":@(max),@"city":cityName});
     
-    [[HttpManager sharedManager] requestUrl:urlString withParameterString:params andCallback:^(NSError *error,NSArray *json) {
+    [[HttpManager sharedManager] requestUrl:urlString withParameterString:params andCallback:^(ResponseCode status,NSArray *json) {
         
-        if (error) { callback(@"没有数据!",nil); return; };
-        
-        callback(nil,json);
-        
+        callback(status,json);
         
     }];
 

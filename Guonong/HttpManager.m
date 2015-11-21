@@ -49,8 +49,22 @@
     
     [[self.session uploadTaskWithRequest:request fromData:data completionHandler:^(NSData * data, NSURLResponse * response, NSError *error) {
         
-        if (error) { callback(error,nil); return;}
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse*)response;
         
+        //服务端错误
+        if (error) {
+            NSLog(@"%@",[error localizedDescription]);
+            callback(DISCONNECT,nil);
+            return;
+        }
+        
+        if (httpResponse.statusCode != 200) {
+            NSLog(@"Http status code: %d",httpResponse.statusCode);
+            callback(SERVER_ERROR,nil);
+            return;
+        }
+        
+        //服务端反馈成功
         NSError     *jsonError = nil;
         NSString    *GBKString = [[NSString alloc] initWithData:data encoding:GBKEncoding];
         NSData      *UTF8Data  = [GBKString dataUsingEncoding:NSUTF8StringEncoding];
@@ -58,10 +72,12 @@
         NSMutableDictionary * jsonValue = [NSJSONSerialization JSONObjectWithData:UTF8Data
                                                                           options:kNilOptions
                                                                             error:&jsonError];
+        //如果字符串能成功转为json，直接返回数据
+        if (!jsonError) { callback(SUCCESS,jsonValue); return;}
         
-        if (jsonError) { callback(jsonError,nil); return;}
+        //如果字符串不能转为json的时候，转为字符串返回
+        callback([GBKString intValue],nil);
         
-        callback(nil,jsonValue);
         
     }] resume];
 }

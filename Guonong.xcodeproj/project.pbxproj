@@ -69,6 +69,7 @@
 		FEB4B3311BF0D54600C9AD41 /* CartCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FEB4B3301BF0D54600C9AD41 /* CartCell.m */; };
 		FEC926DD1BDB8431006BF556 /* GuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC926DC1BDB8431006BF556 /* GuideVC.m */; };
 		FEC926E11BDB8CE3006BF556 /* NSObject+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = FEC926E01BDB8CE3006BF556 /* NSObject+Util.m */; };
+		FED8B6431C006E07007196EB /* UserHttpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FED8B6421C006E07007196EB /* UserHttpTests.m */; settings = {ASSET_TAGS = (); }; };
 		FEDA6EAF1BEA309C00009A80 /* ClassificationTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDA6EAE1BEA309C00009A80 /* ClassificationTVC.m */; };
 		FEDA6EB31BEA3E3400009A80 /* MeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = FEDA6EB21BEA3E3400009A80 /* MeTVC.m */; };
 		FEEBAD221BE475230091F1A4 /* NSUserDefaults+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = FEEBAD211BE475230091F1A4 /* NSUserDefaults+Util.m */; };
@@ -223,6 +224,7 @@
 		FEC926DC1BDB8431006BF556 /* GuideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuideVC.m; sourceTree = "<group>"; };
 		FEC926DF1BDB8CE3006BF556 /* NSObject+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Util.h"; sourceTree = "<group>"; };
 		FEC926E01BDB8CE3006BF556 /* NSObject+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Util.m"; sourceTree = "<group>"; };
+		FED8B6421C006E07007196EB /* UserHttpTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserHttpTests.m; sourceTree = "<group>"; };
 		FEDA6EAD1BEA309C00009A80 /* ClassificationTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassificationTVC.h; sourceTree = "<group>"; };
 		FEDA6EAE1BEA309C00009A80 /* ClassificationTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassificationTVC.m; sourceTree = "<group>"; };
 		FEDA6EB11BEA3E3400009A80 /* MeTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeTVC.h; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 				FE4D98B11BD7B3A800B20147 /* GuonongTests.m */,
 				40AF44C51BFECB5B0019B56C /* ItemHttpTests.m */,
 				40AF44C71BFEF1B60019B56C /* OrderHttpTests.m */,
+				FED8B6421C006E07007196EB /* UserHttpTests.m */,
 				FE4D98B31BD7B3A800B20147 /* Info.plist */,
 			);
 			path = GuonongTests;
@@ -780,6 +783,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED8B6431C006E07007196EB /* UserHttpTests.m in Sources */,
 				40AF44C61BFECB5B0019B56C /* ItemHttpTests.m in Sources */,
 				40AF44C81BFEF1B60019B56C /* OrderHttpTests.m in Sources */,
 				FE4D98B21BD7B3A800B20147 /* GuonongTests.m in Sources */,

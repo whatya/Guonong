@@ -30,9 +30,9 @@
 - (void)testPromotionFetch
 {
     XCTestExpectation *completionExpectation = [self expectationWithDescription:@"PromotionFetch"];
-    [self.itemHttpService promotionFruitsFrom:0 toIndex:3 inCity:@"雅安市" result:^(NSString *errorString, NSArray *fruits) {
+    [self.itemHttpService promotionFruitsFrom:0 toIndex:3 inCity:@"雅安市" result:^(ResponseCode status, NSArray *fruits) {
         
-        XCTAssertNil(errorString);
+        XCTAssertEqual(status, SUCCESS);
         
         XCTAssertTrue([fruits isKindOfClass:[NSArray class]]);
         
@@ -48,9 +48,9 @@
 - (void)testAllFruitsFetch
 {
     XCTestExpectation *completionExpectation = [self expectationWithDescription:@"AllFruitsFetch"];
-    [self.itemHttpService allFruitsFrom:0 toIndex:30 inCity:@"雅安市" result:^(NSString *errorString, NSArray *fruits) {
+    [self.itemHttpService allFruitsFrom:0 toIndex:30 inCity:@"雅安市" result:^(ResponseCode status, NSArray *fruits) {
         
-        XCTAssertNil(errorString);
+        XCTAssertEqual(status, SUCCESS);
         
         XCTAssertTrue([fruits isKindOfClass:[NSArray class]]);
         
@@ -66,9 +66,9 @@
 - (void)testFruitDetailFetch
 {
     XCTestExpectation *completionExpectation = [self expectationWithDescription:@"FruitDetailFetch"];
-    [self.itemHttpService fruitDetailWithId:@"297ebc2d511d914601511da76a92000c" result:^(NSString *errorString, NSDictionary *fruit) {
+    [self.itemHttpService fruitDetailWithId:@"297ebc2d511d914601511da76a92000c" result:^(ResponseCode status, NSDictionary *fruit) {
         
-        XCTAssertNil(errorString);
+        XCTAssertEqual(status, SUCCESS);
         
         XCTAssertTrue([fruit isKindOfClass:[NSDictionary class]]);
         

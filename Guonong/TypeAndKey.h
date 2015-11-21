@@ -47,6 +47,17 @@ typedef NS_ENUM(NSInteger, TransportWay) {
     FAST              // 闪电购
 };
 
+#pragma -mark 请求状态
+typedef NS_ENUM(NSInteger, ResponseCode) {
+    SUCCESS = 100,
+    FAILURE,
+    EXIST,
+    NO_EXIST,
+    DATA_ERROR,
+    SERVER_ERROR,
+    DISCONNECT
+};
+
 
 /*
  字典key定义
